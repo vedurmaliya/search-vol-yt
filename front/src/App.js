@@ -8,7 +8,7 @@ function App() {
 
   const handleSearch = async () => {
      
-    fetch(`http://localhost:8000/searchVolume?keyword=${keyword}`)
+    fetch(`https://searchvolbackend.onrender.com/searchVolume?keyword=${keyword}`)
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP error: ${response.status}`);

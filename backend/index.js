@@ -10,7 +10,7 @@ app.use(express.json());
 
 const cors = require('cors');
 app.use(cors({
-    origin: 'https://searchvolbackend.onrender.com'
+    origin: 'https://search-vol-youtube.vercel.app'
 }));
 
 app.get('/searchVolume', async (req, res) => {

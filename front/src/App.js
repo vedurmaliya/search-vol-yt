@@ -16,6 +16,7 @@ function App() {
       return response.json(); // This is missing in your code
     })
     .then((data) => {
+      console.log(data.totalResults);
       setSearchVolume(data.totalResults) // Now you have the JSON data
     })
     .catch((error) => {

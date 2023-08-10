@@ -10,7 +10,7 @@ app.use(express.json());
 
 const cors = require('cors');
 app.use(cors({
-    origin: 'http://localhost:3000'
+    origin: 'https://searchvolbackend.onrender.com'
 }));
 
 app.get('/searchVolume', async (req, res) => {
